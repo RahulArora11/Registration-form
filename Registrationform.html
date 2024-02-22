@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTRATION FORM</title> 
+    <style>
+        body{
+            background-color: darkturquoise;
+        }
+        table,tr,td,th{
+            border: 3px black solid;
+            border-collapse: collapse;
+            padding: 20px;
+            background-color: blanchedalmond;
+            width: 1000px;
+        }
+        form{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        img{
+            width:40px;
+            height: 40px;
+        }
+
+    </style>
+</head>
+<body>
+    <form action="submit.html" method="post">
+            <table align="center">
+            <center><th colspan="2"><img src="registration.png">REGISTRATION</th></center>
+            <tr>
+                <td>USERNAME</td>
+                <td><input type="text" required placeholder="ENTER YOUR USERNAME" name="username"></td>
+            </tr>
+            <tr>
+                <td>FIRST NAME</td>
+                <td><input type="text" required placeholder="ENTER YOUR FIRST NAME" name="first_name"></td>
+            </tr>
+            <tr>
+                <td>EMAIL</td>
+                <td><input type="email" required placeholder="ENTER YOUR EMAIL" name="email"></td>
+            </tr>
+            <tr>
+                <td>GENDER</td>
+                <td><input type="radio" name="gender">MALE<input type="radio" name="gender">FEMALE</td>
+            </tr>
+            <tr>
+                <td>PASSWORD</td>
+                <td><input type="password" required placeholder="ENTER YOUR PASSWORD" name="password"></td>
+            </tr>
+            <tr>
+                <td>AGE</td>
+                <td><input type="number" required placeholder="AGE" name="age" min="1" max="100"></td>
+            </tr>
+            <tr>
+                <td>DATE_OF_BIRTH</td>
+                <td><input type="date" value="13-02-2024" required placeholder="ENTER YOUR DOB" name="dob"></td>
+            </tr>
+            <tr>
+                <td>BIRTH TIME</td>
+                <td><input type="time" required placeholder="BIRTH TIME" name="BTIME"></td>
+            </tr>
+            <tr>
+                <td>YOUR FAVOURITE COLOUR</td>
+                <td><input type="color" required placeholder="YOUR FAVOURITE COLOUR" name="color"></td>
+            </tr>
+            <tr align="center">
+                <td colspan="2"><input type="submit"></input>&hearts;&nbsp;&nbsp;
+                <input type="reset"></input></td>
+            </tr>
+            </table> 
+        </form>  
+</body>
+</html>
